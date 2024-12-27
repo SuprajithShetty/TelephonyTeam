@@ -1,54 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
+   <!-- Vercel -->
+   
+   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Telephony Team</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="shortcut icon" href="images/luffy2.jpg" type="image/x-icon">
+    
 
-  
-  <!-- Vercel -->
-  <script defer src="/_vercel/insights/script.js">  </script>
+   <title>Happy New Year</title>
+   <link rel="icon" type="image/png" href="images/2025-golden-happy-new-year-logo_10824072.png!w700wp">
 
+   <style>
+     body {
+       margin: 0;
+       background: linear-gradient(to bottom, #1a237e, #0d47a1);
+       color: #fff;
+       font-family: 'Arial', sans-serif;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       height: 100vh;
+       overflow: hidden;
+     }
+ 
+     .text {
+       position: relative;
+       font-size: 4rem;
+       font-weight: bold;
+       text-align: center;
+       animation: glow 1.5s infinite alternate;
+     }
+ 
+     .text span {
+       color: gold;
+     }
+ 
+     @keyframes glow {
+       0% {
+         text-shadow: 0 0 10px gold, 0 0 20px gold, 0 0 30px orange, 0 0 40px orange;
+       }
+       100% {
+         text-shadow: 0 0 20px orange, 0 0 30px red, 0 0 40px red, 0 0 50px crimson;
+       }
+     }
+ 
+     .sparkles {
+       position: absolute;
+       top: 0;
+       left: 0;
+       width: 100%;
+       height: 100%;
+       pointer-events: none;
+     }
+ 
+     .sparkle {
+       position: absolute;
+       width: 8px;
+       height: 8px;
+       background-color: gold;
+       border-radius: 50%;
+       opacity: 0;
+       animation: sparkle 2s infinite ease-in-out;
+     }
+ 
+     @keyframes sparkle {
+       0% {
+         opacity: 0;
+         transform: scale(0.5);
+       }
+       50% {
+         opacity: 1;
+         transform: scale(1.5);
+       }
+       100% {
+         opacity: 0;
+         transform: scale(0.5);
+       }
+     }
+   </style>
 
-</head>
-<script type="text/javascript" charset="utf-8">
-  (function (g, e, n, es, ys) {
-    g['_genesysJs'] = e;
-    g[e] = g[e] || function () {
-      (g[e].q = g[e].q || []).push(arguments)
-    };
-    g[e].t = 1 * new Date();
-    g[e].c = es;
-    ys = document.createElement('script'); ys.async = 1; ys.src = n; ys.charset = 'utf-8'; document.head.appendChild(ys);
-  })(window, 'Genesys', 'https://apps.usw2.pure.cloud/genesys-bootstrap/genesys.min.js', {
-    environment: 'prod-usw2',
-    deploymentId: '2da18d2a-9177-4b58-8a77-7fe1ae5cb9ea'
-  });
-</script>
+    <!-- Script for Vercel -->
+    <script defer src="/_vercel/insights/script.js">  </script>
 
-<body style="background-image: url('images/goku.jpg');">
+    <!-- Script for the Bot -->
 
-  <section class="main_banner">
-    <ul>
-      <li onmouseover="imgChange('images/naruto2.jpg')"><a href="">Eric Jaquith </a></li>
-      <li onmouseover="imgChange('images/jujutsu.jpg')"><a href="">Brad Gardner</a></li>
-      <li onmouseover="imgChange('images/luffy2.jpg')"><a href="">Laurel Wolfe</a></li>
-      <li onmouseover="imgChange('images/aot3.jpg')"><a href="">Ramchandra Keshav</a></li>
-      <li onmouseover="imgChange('images/aot6.jpg')"><a href="">Glenn Dumanglas</a></li>
-      <li onmouseover="imgChange('images/Suprajith.jpeg')"><a href="">Suprajith M N</a></li>
-      <li onmouseover="imgChange('images/aot5.jpg')"><a href="">Harish D</a></li>
+    <script type="text/javascript" charset="utf-8">
+      (function (g, e, n, es, ys) {
+        g['_genesysJs'] = e;
+        g[e] = g[e] || function () {
+          (g[e].q = g[e].q || []).push(arguments)
+        };
+        g[e].t = 1 * new Date();
+        g[e].c = es;
+        ys = document.createElement('script'); ys.async = 1; ys.src = n; ys.charset = 'utf-8'; document.head.appendChild(ys);
+      })(window, 'Genesys', 'https://apps.usw2.pure.cloud/genesys-bootstrap/genesys.min.js', {
+        environment: 'prod-usw2',
+        deploymentId: '2da18d2a-9177-4b58-8a77-7fe1ae5cb9ea'
+      });
+    </script>
 
-    </ul>
-    <div class="bg-image"  >
-
-    </div>
-  </section>
-
-<script src="javascript.js"></script>
-
-</body>
-
-</html>
+   </head>
+      <body>
+       <div class="text">🎉 <span>Happy New Year Telephony Team</span> 🎉</div>
+ 
+       <div class="sparkles"></div>
+ 
+       <script>
+     // Create random sparkles
+        const sparklesContainer = document.querySelector('.sparkles');
+      for (let i = 0; i < 100; i++) {
+       const sparkle = document.createElement('div');
+       sparkle.classList.add('sparkle');
+       sparkle.style.left = `${Math.random() * 100}%`;
+       sparkle.style.top = `${Math.random() * 100}%`;
+       sparkle.style.animationDelay = `${Math.random() * 2}s`;
+       sparklesContainer.appendChild(sparkle);
+     }
+   </script>
+ </body>
+ </html>
